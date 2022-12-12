@@ -5,8 +5,10 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "preview": "vite preview",
     "build": "vite build",
-    "preview": "vite preview"
+      "predeploy": "pnpm run build",
+      "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "aos": "^2.3.4",
